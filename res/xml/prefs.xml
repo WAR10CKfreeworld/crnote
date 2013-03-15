@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<Preference android:title="About CrNote" android:key="about" />
+	
+	<PreferenceCategory android:title="Application Settings">
+		<!-- <CheckBoxPreference android:title="Auto Save"
+			android:summary="Save changes automatically on close" android:key="autosave"
+			android:defaultValue="true" /> -->
+		<!--<CheckBoxPreference android:title="Enable Master Password"
+			android:summary="Use Master Password for all files" android:key="masterpass"
+			android:defaultValue="false" />-->
+		<EditTextPreference android:key="timeout"
+			android:summary="Seconds before CrNote locks"
+			android:title="Timeout (min 10)" android:defaultValue="300" />
+		<CheckBoxPreference android:title="Auto Backup"
+			android:summary="Create backups on save" android:key="autobackup"
+			android:defaultValue="true" />
+		<EditTextPreference android:key="backup_count"
+			android:summary="Number of local backup copies to keep"
+			android:title="Backup Copies" android:defaultValue="5" />
+		<EditTextPreference android:key="folder"
+			android:summary="Device location to store files" android:title="Local Folder" />
+		<CheckBoxPreference android:title="Encode Metafiles"
+			android:summary="Encode embedded metafiles using Base64" android:key="encode_meta_base64"
+			android:defaultValue="true" />
+		<ListPreference
+            android:title="Default encrypion mode"
+            android:summary="Encrypt file with password and/or pattern"
+            android:key="encModePref"
+            android:defaultValue="Password only encryption"
+            android:entries="@array/encrypt_options_array"
+            android:entryValues="@array/encrypt_options_values" />
+		<!--
+		 <ListPreference android:title="Embedded Image Size"
+		 	android:key="megapixels"
+			android:summary="Size of photos taken by camera"
+         	android:entries="@array/CameraMegapixelsItems"
+         	android:entryValues="@array/CameraMegapixelsValues"
+         	android:dialogTitle="Please select a megapixel option"
+         	android:defaultValue="2">
+         </ListPreference>
+        -->
+	</PreferenceCategory>
+
+	<PreferenceCategory
+		android:title="Security and Online" android:enabled="true">
+		<CheckBoxPreference android:title="Advanced Security/Online Settings"
+			android:key="advancedsecurity" android:defaultValue="false" />
+	</PreferenceCategory>
+	
+	<PreferenceCategory
+		android:title="Advanced Security/Online Settings" android:enabled="false" android:key="advancedsecprefs">
+		<CheckBoxPreference android:title="Secure Storage Mode"
+			android:summary="Perform additional encryption to files written to local SDCard/shared storage" android:key="securestorage"
+			android:defaultValue="false" />
+		<EditTextPreference android:key="webuser"
+			android:summary="crnote.com online User identifier" android:title="Your ID" />
+		<EditTextPreference android:key="webauthkey"
+			android:summary="crnote.com online Authorization Key" android:title="Authkey" />
+		<EditTextPreference android:key="cloudkey"
+			android:summary="This is the only value synced to Google cloud. Do not change this unless you've exported settings."
+			android:title="Config Encryption Key" />
+		<EditTextPreference android:key="patternseed"
+		    android:summary="Seed key used for pattern-based encryption in Hex. Default is Android ID" android:title="Pattern Seed" />
+		<EditTextPreference android:key="webkey"
+			android:summary="Encryption key for online and secure device storage" android:title="File Encryption Key" />
+		<EditTextPreference android:key="weburl"
+			android:summary="URL of crNote online service" android:title="CrNote URL"
+			android:defaultValue="https://crnote.com/mynote/" />
+		<Preference android:title="Generate Keys"
+			android:summary="Click here to auto-regenerate all the keys for Online Sync. Please note that all your existing keys will be overwritten if you continue."
+			android:key="generatekeys" />
+	</PreferenceCategory>
+	
+	<PreferenceCategory
+		android:title="Configuration Management">
+		<Preference android:title="Import Settings"
+			android:summary="Import the settings from a file"
+			android:key="importkeys" />
+		<Preference android:title="Export Settings"
+			android:summary="Export the settings to a file"
+			android:key="exportkeys" />
+	</PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:orientation="vertical" android:scrollbars="vertical" android:layout_gravity="bottom" android:layout_height="wrap_content">
+
+   	<View android:id="@+id/emptyLine0" android:layout_width="fill_parent" android:layout_height="1px" android:layout_below="@+id/tv_branch" android:background="@color/lineseparator"/>
+    <LinearLayout android:layout_width="fill_parent" android:orientation="vertical" android:layout_height="wrap_content" android:id="@+id/layoutPasswordOption" android:clickable="true" android:paddingTop="2dp">
+        <TextView android:text="Set New Password" android:layout_width="wrap_content" android:textSize="16dp" android:layout_height="wrap_content" android:textColor="@color/text_color_selected" android:paddingLeft="4dp" android:id="@+id/textSetPassword"></TextView>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/text_color_dull" android:id="@+id/passwordInstructionsTextView" android:paddingLeft="10dp" android:paddingBottom="4dp" android:text="Set a new encryption password and/or pattern"></TextView>
+    </LinearLayout>
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:orientation="vertical" android:id="@+id/layoutPasswordFields" android:visibility="visible">
+    </LinearLayout>
+    <View android:id="@+id/emptyLine2" android:layout_width="fill_parent" android:layout_height="1px" android:layout_below="@+id/tv_branch" android:background="@color/lineseparator"/>
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/layoutMakeBackup" android:orientation="vertical" android:padding="0dp">
+        <LinearLayout android:id="@+id/linearLayout2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:layout_height="wrap_content" android:id="@+id/makeBackupText" android:paddingLeft="4dp" android:layout_weight="1" android:textSize="16dp" android:text="Make backup" android:textColor="@color/text_color_selected" android:layout_width="wrap_content"></TextView>
+            <CheckBox android:layout_height="wrap_content" android:id="@+id/makeBackupCheckBox" android:checked="true" android:layout_width="wrap_content"></CheckBox>
+        </LinearLayout>
+        <View android:background="@color/lineseparator" android:layout_height="1px" android:id="@+id/emptyLine3" android:layout_width="fill_parent"></View>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/syncLayout" android:layout_height="wrap_content" android:layout_width="fill_parent">
+        <TextView android:id="@+id/textView4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Online Sync" android:textSize="16dp" android:layout_weight="1" android:textColor="@color/text_color_selected" android:paddingLeft="4dp"></TextView>
+        <CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/onlineSyncCheckBox"></CheckBox>
+    </LinearLayout>
+    <View android:id="@+id/emptyLine4" android:layout_width="fill_parent" android:layout_height="1px" android:layout_below="@+id/tv_branch" android:background="@color/lineseparator"/>
+    <LinearLayout android:layout_height="wrap_content" android:id="@+id/linearLayout1" android:layout_width="fill_parent" android:paddingTop="3dp">
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/buttonOK" android:text="Save" android:layout_weight=".5"></Button>
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight=".2" android:id="@+id/buttonNO" android:text="Don't Save"></Button>
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/buttonCancel" android:layout_weight=".33" android:text="Continue Editing"></Button>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@drawable/crleaf_gradient">
+	<ImageView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:id="@+id/leaficon"
+		android:src="@drawable/crleaf"></ImageView>
+	<TextView android:text="TextView" android:textColor="#ffffff"
+		android:paddingLeft="5dp" android:id="@+id/leafitem_text"
+		android:layout_width="0dp" android:layout_weight="1"
+		android:layout_height="wrap_content" android:lines="1"
+		android:textSize="16dp" />
+</LinearLayout>

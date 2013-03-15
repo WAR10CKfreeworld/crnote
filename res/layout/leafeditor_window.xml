@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content">
+
+	<TextView android:id="@+id/tv_branch" android:layout_width="fill_parent"
+		android:textSize="20dp" android:lines="1" android:text="---BRANCH--"
+		android:layout_marginBottom="0dp" android:layout_height="40dp"
+		android:textColor="@color/cr_orange_text" android:gravity="bottom"
+		android:paddingBottom="2dp" android:background="#333333" android:scrollHorizontally="true"
+		android:scrollbars="none" android:scrollbarStyle="insideInset"
+		android:ellipsize="start" />
+
+	<View android:id="@+id/emptyLine" android:layout_width="fill_parent" android:layout_height="1dp"
+		android:layout_below="@+id/tv_branch" android:background="#aaaaaa"/>
+	
+	<ScrollView android:layout_width="fill_parent"
+		android:scrollbars="vertical" android:layout_height="fill_parent"
+		android:id="@+id/tv_scrollView1" android:layout_above="@+id/linearLayout1" android:layout_below="@+id/emptyLine"
+		android:fillViewport="true"
+		android:gravity="top">
+	<view xmlns:android="http://schemas.android.com/apk/res/android"
+		class="com.fff.android.crnote.TextEditor" android:id="@+id/tv_notes"
+		android:layout_width="fill_parent" android:background="#000000"
+		android:textColor="@color/text_color" android:padding="5dip"
+		android:scrollbars="vertical" android:fadingEdge="vertical"
+		android:textSize="16dp" android:layout_height="wrap_content"
+		android:gravity="top" android:inputType="text|textMultiLine|textLongMessage"
+		android:imeOptions="normal|actionDone" android:cursorVisible="true"
+		android:focusableInTouchMode="true" style="@style/crBlackStyle"/>
+	</ScrollView>
+		
+	<LinearLayout android:id="@+id/linearLayout1"
+		android:layout_alignParentBottom="true" android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<Button android:text="Done" android:id="@+id/button_done"
+			android:layout_width="0dip" android:layout_weight=".33"
+			android:layout_height="wrap_content"></Button>
+		<Button android:text="Insert" android:id="@+id/button_rand"
+			android:layout_width="0dip" android:layout_weight=".33"
+			android:layout_height="wrap_content"></Button>
+		<Button android:text="Cancel" android:id="@+id/button_cancel"
+			android:layout_width="0dip" android:layout_weight=".3"
+			android:layout_height="wrap_content"></Button>
+	</LinearLayout>
+</RelativeLayout>

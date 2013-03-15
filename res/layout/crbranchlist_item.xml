@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="38dp" android:orientation="vertical">
+	<TextView android:text="@+id/crrowtext" android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+		android:id="@+id/crrowtext"
+		android:gravity="center_vertical"
+		android:layout_alignTop="@+id/crrowimage"
+		android:layout_alignBottom="@+id/crrowimage" android:textColor="@color/text_color"
+		android:textColorHighlight="@color/text_color_selected"
+		android:lines="1" android:padding="6dp" android:textSize="18dp" android:ellipsize="end"/>
+	<View android:id="@+id/emptyLine" android:layout_width="fill_parent" android:layout_height="1dp"
+		android:background="#aaaaaa" android:paddingBottom="4dp"/>
+</LinearLayout>

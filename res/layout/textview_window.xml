@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+	<include layout="@layout/searchbar" android:id="@+id/textview_searchbar" />
+
+	<ScrollView android:layout_width="fill_parent"
+		android:scrollbars="vertical" android:layout_height="fill_parent"
+		android:id="@+id/tv_scrollView1" android:layout_above="@+id/tv_filename"
+		android:layout_below="@+id/textview_searchbar" android:fillViewport="true"
+		android:gravity="top">
+		<view xmlns:android="http://schemas.android.com/apk/res/android"
+			class="com.fff.android.crnote.TextEditor" android:id="@+id/tv_textView1"
+			android:layout_width="fill_parent" android:background="@null"
+			android:textColor="@color/text_color" android:padding="5dip"
+			android:scrollbars="vertical" android:fadingEdge="vertical"
+			android:textSize="16dp" android:layout_height="wrap_content"
+			android:gravity="top" android:inputType="text|textMultiLine|textLongMessage"
+			android:imeOptions="normal|actionDone" android:cursorVisible="true"
+			android:focusable="true" android:focusableInTouchMode="true"
+			 />
+	</ScrollView>
+
+
+	<TextView android:id="@+id/tv_filename" android:layout_width="fill_parent"
+		android:textSize="12dp" android:lines="1" android:text="---FILENAME--"
+		android:layout_marginBottom="0dp" android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:background="@drawable/textview_filename_gradient"
+		android:textColor="@color/green_filename" />
+</RelativeLayout>

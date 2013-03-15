@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<TextView android:id="@+id/textTitlePrompt" android:text="Please select a branch"
+		android:textColor="@color/cr_orange_text" android:textSize="20dp"
+		android:layout_width="fill_parent" android:background="@color/dark_gray_bg"
+		android:layout_height="30dp" android:gravity="bottom"></TextView>
+
+	<ListView android:layout_width="fill_parent" android:id="@android:id/list"
+		android:scrollbars="vertical" android:smoothScrollbar="true"
+		android:layout_below="@+id/textTitlePrompt" android:layout_height="fill_parent" />
+</RelativeLayout>

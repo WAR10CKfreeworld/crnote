@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string-array name="CameraMegapixelsItems">
+        <item>1 MP</item>
+        <item>2 MP</item>
+        <item>5 MP</item>
+        <item>Maximum</item>
+</string-array>
+<string-array name="CameraMegapixelsValues">
+        <item>1</item>
+        <item>2</item>
+        <item>5</item>
+        <item>10000</item>
+</string-array>
+</resources>

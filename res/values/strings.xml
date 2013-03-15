@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">CrNote!</string>
+    <string name="app_name">CrNote</string>
+    <string name="location">Location</string>
+    <string name="cant_read_folder">folder can\'t be read!</string>
+    <string name="nnew">New</string>
+    <string name="select">Select</string>
+    <string name="file_name">File name:</string>
+    <string name="cancel">Cancel</string>
+    <string name="create">Create</string>
+    <string name="no_data">No Data</string>
+	<color name="gray">#888888</color>
+	<color name="blueish">#76A7B5</color>
+	<color name="text_color_dull">#aaaaaa</color>
+	<color name="text_color">#DEDEDE</color>
+	<color name="text_color_selected">#ffffff</color>
+	<color name="green_filename">#00aa00</color>
+	<color name="dark_gray_bg">#333333</color>
+	<color name="lineseparator">#aaaaaa</color>
+	<color name="transparent">#80000000</color>
+	
+	<color name="cr_orange_text">#FAB616</color>
+	
+	<string name="crnote_com_product_id">com.fff.android.crnote.online11</string>
+	
+	<string name="random_generator_options">Generate...</string>
+    <string-array name="random_generator_options_array">
+		<item>Text</item>
+		<item>Hex</item>
+		<item>Base64</item>
+		<item>Number</item>
+    </string-array>
+</resources>

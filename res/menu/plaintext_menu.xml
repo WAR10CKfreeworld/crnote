@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:title="Save" android:icon="@android:drawable/ic_menu_save"
+		android:id="@+id/itemSave" />
+	<item android:title="Search" android:id="@+id/itemSearch"
+		android:icon="@android:drawable/ic_search_category_default" />
+		<item android:title="Insert Random" android:id="@+id/itemInsert"
+		android:icon="@android:drawable/ic_menu_add" />
+	<item android:title="Settings" android:id="@+id/itemSettings"
+		android:icon="@android:drawable/ic_menu_preferences" />
+</menu>

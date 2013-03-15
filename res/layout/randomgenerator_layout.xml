@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	android:orientation="vertical">
+	<Spinner android:id="@+id/spinnerOptions"
+		android:layout_height="wrap_content" android:layout_width="match_parent"></Spinner>
+	<LinearLayout android:layout_height="wrap_content"
+		android:id="@+id/linearLayout2" android:layout_width="match_parent">
+		<TextView android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:id="@+id/textView1"
+			android:text="Length" android:textSize="24dp" android:paddingRight="5dp"></TextView>
+		<EditText android:layout_height="wrap_content" android:id="@+id/genLen"
+			android:inputType="number" android:layout_width="match_parent"
+			android:text="10" android:padding="4dp"></EditText>
+	</LinearLayout>
+	<EditText android:layout_height="wrap_content" android:id="@+id/editTextGenerated"
+		android:layout_width="match_parent" android:text="EditText" android:maxLines="6"></EditText>
+	<LinearLayout android:layout_height="wrap_content"
+		android:id="@+id/linearLayout1" android:layout_width="match_parent">
+		<Button android:text="Insert" android:id="@+id/bInsert"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_weight=".33"></Button>
+		<Button android:text="Copy" android:id="@+id/bCopy"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_weight=".33"></Button>
+		<Button android:text="Cancel" android:id="@+id/bCancel"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_weight=".33"></Button>
+	</LinearLayout>
+</LinearLayout>

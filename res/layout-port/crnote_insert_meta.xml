@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:padding="2dp"
+	android:layout_height="fill_parent" android:layout_width="fill_parent">
+	<ImageView android:id="@+id/imageView" android:src="@drawable/unknownfile"
+		android:layout_width="fill_parent" android:layout_gravity="center_vertical|center_horizontal"
+		android:scaleType="fitCenter" android:clickable="true"
+		android:layout_height="120dp" android:paddingBottom="4dp"></ImageView>
+	<LinearLayout android:layout_width="match_parent"
+		android:layout_height="wrap_content" android:orientation="horizontal"
+		android:id="@+id/layoutSource" android:paddingBottom="4dp">
+		<ToggleButton android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:textOn=""
+			android:textOff="" android:background="@drawable/cr_touchslide"
+			android:id="@+id/touchslide"></ToggleButton>
+		<Button android:id="@+id/bSelectFile" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:ellipsize="end"
+			android:text="Select File" android:gravity="right|center_vertical"></Button>
+	</LinearLayout>
+	<TableLayout android:layout_height="wrap_content"
+		android:id="@+id/tableLayout1" android:layout_width="match_parent"
+		android:stretchColumns="1" android:paddingBottom="6dp">
+		<TableRow android:layout_height="wrap_content" android:id="@+id/tableRow1"
+			android:layout_width="match_parent">
+			<TextView android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:layout_gravity="center_vertical"
+				android:id="@+id/tFilenameLabel" android:text="Name"></TextView>
+			<EditText android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_weight="1"
+				android:id="@+id/etFilename">
+				<requestFocus></requestFocus>
+			</EditText>
+		</TableRow>
+		<TableRow android:layout_height="wrap_content" android:id="@+id/tableRow2"
+			android:layout_width="match_parent">
+			<TextView android:layout_height="wrap_content" android:id="@+id/textView2"
+				android:layout_width="wrap_content" android:text="Description"></TextView>
+			<EditText android:text="" android:id="@+id/etDescription"
+				android:layout_height="wrap_content" android:maxLines="3"
+				android:layout_width="wrap_content"></EditText>
+		</TableRow>
+		<TableRow android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:id="@+id/tableRow3">
+			<TextView android:layout_height="wrap_content" android:id="@+id/textView3"
+				android:layout_width="wrap_content" android:text="Content type"></TextView>
+			<EditText android:text="" android:layout_height="wrap_content"
+				android:id="@+id/etContentType" android:lines="1"
+				android:layout_width="wrap_content"></EditText>
+		</TableRow>
+		<TableRow android:layout_height="wrap_content"
+			android:layout_width="match_parent" android:id="@+id/tableRow4"
+			android:visibility="gone">
+			<TextView android:layout_height="wrap_content" android:id="@+id/textView4"
+				android:layout_width="wrap_content" android:text="Options"></TextView>
+			<CheckBox android:layout_height="wrap_content" android:id="@+id/cbBase64"
+				android:checked="true" android:layout_width="wrap_content"
+				android:text="Base64 encode"></CheckBox>
+		</TableRow>
+	</TableLayout>
+	<TextView android:layout_height="wrap_content"
+		android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceSmall"
+		android:layout_gravity="center" android:id="@+id/tFilesz"
+		android:layout_marginBottom="10dp"></TextView>
+
+	<View android:layout_width="fill_parent" android:layout_height="1dp"
+		android:background="@color/lineseparator" android:id="@+id/emptyLine1" />
+
+	<RelativeLayout android:layout_height="wrap_content"
+		android:layout_width="match_parent" android:id="@+id/relLayout1"
+		android:gravity="center_horizontal" android:paddingTop="6dp">
+		<Button android:text="Insert" android:id="@+id/bInsert"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:inputType="none" android:lines="1" />
+		<Button android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/bExport"
+			android:text="Export" android:layout_toRightOf="@+id/bInsert" />
+		<Button android:text="Cancel" android:id="@+id/bCancel"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_toRightOf="@+id/bExport" />
+	</RelativeLayout>
+</LinearLayout>

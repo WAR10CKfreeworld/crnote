@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/linearLayout1"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical">
+
+	<TextView android:id="@+id/crnoteurl" android:layout_width="fill_parent"
+		android:textSize="12dp" android:lines="1" android:text="crnoteurl"
+		android:layout_marginBottom="0dp" android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:background="@drawable/textview_filename_gradient"
+		android:textColor="@color/green_filename" />
+		
+	<ListView android:id="@android:id/list" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" />
+</LinearLayout>

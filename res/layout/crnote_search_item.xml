@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:orientation="vertical">
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:id="@+id/branchitem" android:layout_weight=".5" android:layout_height="wrap_content" android:paddingTop="2dp" android:paddingBottom="2dp">
+		<ImageView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:src="@drawable/crbranch"
+			android:id="@+id/branchicon" android:layout_gravity="center_vertical"></ImageView>
+		<TextView android:text="Branch" android:textColor="#ffffff"
+			android:paddingLeft="5dp" android:id="@+id/branchitem_text"
+			android:layout_weight="1"
+			android:layout_height="wrap_content" android:lines="1"
+			android:textSize="16dp" android:layout_gravity="center_vertical" android:ellipsize="marquee" android:scrollHorizontally="true" android:layout_width="fill_parent"></TextView>
+		<ImageView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/branchitem_next"
+			android:src="@drawable/crnext" android:layout_gravity="center_vertical"></ImageView>
+	</LinearLayout>
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:id="@+id/leafitem" android:layout_weight=".5" android:layout_height="wrap_content" android:paddingTop="2dp" android:paddingBottom="2dp">
+		<ImageView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/leaficon"
+			android:src="@drawable/crleaf" android:layout_gravity="top"></ImageView>
+		<RelativeLayout android:layout_width="fill_parent"	android:layout_height="wrap_content">
+			<TextView android:text="Branch" android:textColor="#aaaaaa"
+				android:paddingLeft="5dp" android:id="@+id/leafparent_text"
+				android:layout_height="wrap_content" android:lines="1"
+				android:textSize="12dp" android:scrollbars="none"
+				android:scrollbarStyle="insideInset"
+				android:ellipsize="start" android:layout_width="fill_parent" android:textStyle="bold|italic"></TextView>
+			<TextView android:text="Text" android:textColor="#ffffff"
+				android:paddingLeft="5dp" android:id="@+id/leafitem_text"
+				android:layout_height="wrap_content" android:maxLines="2"
+				android:textSize="14dp" android:layout_below="@+id/leafparent_text" android:layout_width="fill_parent"></TextView>
+		</RelativeLayout>
+	</LinearLayout>
+</LinearLayout>

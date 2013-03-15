@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+	<ImageView android:layout_alignParentLeft="true" android:id="@+id/fdrowimage"
+		android:layout_width="wrap_content"	android:paddingRight="5dp" android:paddingLeft="3dp"
+		android:layout_alignParentTop="true" android:layout_height="fill_parent" android:paddingTop="5dp"></ImageView>
+	<TextView android:text="@+id/fdrowtext" android:layout_width="wrap_content"
+		android:id="@+id/fdrowtext" android:layout_toRightOf="@+id/fdrowimage"
+		android:layout_alignTop="@+id/fdrowimage" 
+		android:textSize="23dp" android:textColor="#eee"
+		android:ellipsize="marquee" android:maxLines="3" android:layout_height="fill_parent"/>
+	<TextView android:layout_width="wrap_content"
+		android:id="@+id/fdrowdetails" android:layout_below="@+id/fdrowtext"
+		android:text="file details" android:layout_height="wrap_content" android:textSize="14dp"
+		android:textColor="#999" android:layout_alignParentRight="true"/>
+
+</RelativeLayout>
